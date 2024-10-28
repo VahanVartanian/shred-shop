@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "name": "EarthQuaker Plumes Overdrive Pedal",
+      "price": 159.00,
+      "description": "A powerful overdrive pedal for a warm sound.",
+      "image": "src/img/Plumes.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Boss DD-8 Delay Pedal",
+      "price": 240.00,
+      "description": "Experience echo and delay effects with clarity.",
+      "image": "src/img/dd-8.jfif"
+    },
+    {
+      "id": 3,
+      "name": "EarthQuaker Aurelius Chorus Pedal",
+      "price": 269.00,
+      "description": "Rich chorus effects to enhance your tone.",
+      "image": "src/img/Aurelius.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Electro Harmonix Big Muff Fuzz Pedal",
+      "price": 144.00,
+      "description": "Get that classic fuzzy sound for your solos.",
+      "image": "src/img/big-muff.jfif"
+    },
+    {
+      "id": 5,
+      "name": "Boss DS-1 Distortion Pedal",
+      "price": 90.00,
+      "description": "Perfect for achieving that heavy metal sound.",
+      "image": "src/img/distortion.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Dunlop Crybaby Wah Wah Pedal",
+      "price": 150.00,
+      "description": "Add depth and space to your sound.",
+      "image": "src/img/wahwah.jpg"
+    }
+  ]
+  

@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
+import productsData from './products.json';
+import ProductGrid from './components/ProductGrid';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [products, setProducts] = useState(productsData);
+  const [favourites, setFavourites] = useState([]);
+
+  const handleFavClick = (productId) => {
+    if (favourites.includes(productId)) {
+      const newFavourites = favourites.filter((id) => id !== productId);
+      setFavourites(newFavourites);
+    } else {
+      setFavourites([...favourites, productId]);
+    }
+  };
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="bg-gray-100 min-h-screen p-8">
+      <h1 className="text-4xl font-bold text-center mb-8">Products</h1>
+      <ProductGrid products={products} favourites={favourites} handleFavClick={handleFavClick} />
+    </div>
+  </>
+  );
 }
 
-export default App
+export default App;
